@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>YARDS 军事卡牌对战游戏 | 完整玩法介绍</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Microsoft Yahei,sans-serif}
+body{background:#12151b;color:#e6e6e6}
+.top-banner{width:100%;padding:40px 20px;text-align:center;background:#0a0c10}
+.logo{width:240px;margin:0 auto 10px}
+.top-banner h1{color:#f0c860;font-size:42px;letter-spacing:3px}
+.author{margin:12px 0;color:#ccc}
+.author img{width:50px;height:50px;border-radius:50%;border:2px solid #f0c860;vertical-align:middle;margin-right:10px}
+.btn{margin-top:16px;padding:12px 32px;background:#c83030;color:#fff;border:none;font-size:16px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{background:#e04040}
+.tip-text{margin-top:10px;color:#aaa;font-size:14px}
+.wrap{max-width:1100px;margin:0 auto;padding:50px 20px}
+.title{font-size:28px;color:#f0c860;border-left:4px solid #f0c860;padding-left:12px;margin:40px 0 20px}
+.intro{margin-bottom:60px}
+.intro h3{font-size:22px;margin-bottom:12px;color:#fff}
+.intro p{color:#ccc;margin-bottom:10px;line-height:1.6}
+.game-preview{width:100%;max-width:900px;margin:30px auto 0;display:block;border:1px solid #333;min-height:320px;background:#20252d}
+.rule-box{background:#1a1f28;padding:30px;border:1px solid #2d3440;margin-bottom:40px}
+.rule-box h3{color:#f0c860;font-size:20px;margin-bottom:18px}
+.rule-box li{list-style:none;padding:10px 0;border-bottom:1px solid #2d3440;color:#ddd}
+.rule-box li:last-child{border:none}
+.rule-box strong{color:#f0c860;min-width:130px;display:inline-block}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-bottom:60px}
+.card-item{background:#1a1f28;padding:24px;border:1px solid #333}
+.card-item h4{color:#f0c860;font-size:19px;margin-bottom:10px}
+.card-item p{color:#bbb}
+.step-item{display:flex;gap:16px;margin:24px 0}
+.step-num{width:34px;height:34px;background:#f0c860;color:#12151b;text-align:center;line-height:34px;border-radius:50%;font-weight:bold;flex-shrink:0}
+.step-text h4{color:#fff;font-size:18px;margin-bottom:6px}
+.step-text p{color:#ccc}
+footer{background:#0a0c10;padding:30px;text-align:center;color:#777;font-size:14px}
+</style>
+</head>
+<body>
+<div class="top-banner">
+    <!-- 图片src空白，上传图片后填入链接即可显示，不会加载失败 -->
+    <img class="logo" alt="YARDS游戏图标">
+    <h1>YARDS 军事卡牌对战</h1>
+    <div class="author">
+        <img alt="作者叶利钦头像">
+        游戏作者：叶利钦
+    </div>
+    <p style="max-width:680px;margin:0 auto 10px;color:#ddd">复刻Kards硬核二战卡牌玩法，构筑专属卡组，回合制战术对抗</p>
+    <!-- 专属有效加群链接，新标签页打开，直接唤起QQ加群窗口 -->
+    <a href="https://qm.qq.com/q/tST6xYHciI" target="_blank" class="btn">加入QQ交流群【木头的滚动。vs 。骑行光绪】</a>
+    <!-- 兜底提示，链接异常可手动搜索群号 -->
+    <p class="tip-text">链接无法跳转请复制群号手动搜索：1098046821</p>
+</div>
+
+<div class="wrap">
+    <h2 class="title">游戏简介</h2>
+    <div class="intro">
+        <h3>YARDS 卡牌游戏核心设定</h3>
+        <p>YARDS 是由叶利钦制作的军事题材集换式卡牌游戏，整体对战机制完全对标Kards。游戏以战场战线、补给费用、多兵种搭配为核心，主打策略博弈，不存在无脑碾压对局。</p>
+        <p>玩家可以自由构筑单阵营卡组，搭配步兵、装甲、空军、战术指令四类卡牌，通过拉扯战线、费用运营消耗对手血量取胜。</p>
+        <!-- 对战预览占位图，自行上传图片替换src -->
+        <img class="game-preview" alt="YARDS游戏对战界面">
+    </div>
+
+    <h2 class="title">基础对战规则</h2>
+    <div class="rule-box">
+        <h3>对局基础设定</h3>
+        <ul>
+            <li><strong>生命值：</strong>双方初始20血，清空对手血量直接获胜</li>
+            <li><strong>费用系统：</strong>每回合上限+1，最高10费，出牌部署单位消耗费用</li>
+            <li><strong>战场分区：</strong>分为前线、后排，不同兵种有专属部署限制</li>
+            <li><strong>回合流程：</strong>抽牌→补给→部署单位→进攻→回合结束</li>
+            <li><strong>阵营机制：</strong>单卡组仅能选择一个主阵营，搭配中立通用卡牌</li>
+        </ul>
+    </div>
+
+    <h2 class="title">卡牌分类</h2>
+    <div class="card-grid">
+        <div class="card-item">
+            <h4>步兵单位卡</h4>
+            <p>低费铺场单位，负责占线防御，部分拥有伏击、减伤buff，前期过渡核心。</p>
+        </div>
+        <div class="card-item">
+            <h4>装甲坦克卡</h4>
+            <p>中后期核心输出，高攻高血量，多数带有突击效果，斩杀敌方主力。</p>
+        </div>
+        <div class="card-item">
+            <h4>空军支援卡</h4>
+            <p>无视前线直接攻击敌方单位或玩家本体，容易被防空卡牌克制。</p>
+        </div>
+        <div class="card-item">
+            <h4>战术指令卡</h4>
+            <p>一次性法术卡，包含轰炸、强化、移除敌方单位、补给资源等战术效果。</p>
+        </div>
+    </div>
+
+    <h2 class="title">对局完整流程</h2>
+    <div class="flow-box">
+        <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-text">
+                <h4>开局更换初始手牌</h4>
+                <p>双方抽取4张起始手牌，可任意替换手牌调整起手，先手首回合少1费平衡对局。</p>
+            </div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-text">
+                <h4>回合抽牌与补给</h4>
+                <p>每回合自动抽1张牌，费用上限提升1点，费用用于打出卡牌。</p>
+            </div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-text">
+                <h4>部署兵种构筑防线</h4>
+                <p>消耗费用将步兵、坦克部署到前后排，规划防守阵型预留费用应对突袭。</p>
+            </div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-text">
+                <h4>进攻阶段博弈</h4>
+                <p>己方单位发起进攻，可攻击敌方单位或直接攻击玩家，敌方场上单位可拦截。</p>
+            </div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">5</div>
+            <div class="step-text">
+                <h4>战术卡扭转战局</h4>
+                <p>攻防阶段均可释放战术卡，轰炸清场、强化装甲、防空拦截改变局势。</p>
+            </div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">6</div>
+            <div class="step-text">
+                <h4>循环回合决出胜负</h4>
+                <p>重复回合运营卡牌，耗尽对手20点生命值即可赢得对局。</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title">卡组构筑规则</h2>
+    <div class="rule-box">
+        <h3>卡组限制与构筑思路</h3>
+        <ul>
+            <li><strong>卡组容量：</strong>最少30张，最多40张卡牌</li>
+            <li><strong>卡牌携带上限：</strong>普通卡最多3张，稀有/史诗/传说最多2张</li>
+            <li><strong>主流构筑流派：</strong>人海快攻、重甲慢速、空军轰炸、防守控制</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+YARDS 军事卡牌游戏玩法介绍 | 作者：叶利钦
+</footer>
+</body>
+</html>
